@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/indexlog.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Title</title>
+    <!-- <style>
+        body, html{
+            background-image: radial-gradient( circle 915px at 10.5% 89.5%,  rgba(11,90,156,1) 0%, rgba(1,31,66,1) 90% ) !important;
+        }
+    </style> -->
+</head>
+
+<body style="text-align: center;
+background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1499257398700-43669759a540?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGVyc29uJTIwcmVhZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-blend-mode: multiply;">
+    <div class="card">
+        <h1>BOOKART LOGIN</h1>
+        <h1 style="background-color: red; color: white;" id="error">{{error}}</h1>
+
+        <form action="/" method="post">
+            {% csrf_token %}
+            <input type="text" name="username" placeholder="username" autofocus="">
+            <input type="password" placeholder="password" required name="password">
+            <input type="submit" value="SUBMIT" class="btn">
+        </form>
+        <p style="color: aliceblue;">Not registered yet? <a href="/register"
+                style="font-size: 25px; color: yellow;">Click here</a></p>
+    </div>
+
+    <script>
+        s = document.getElementById('error');
+        setTimeout(function () {
+            s.hidden = true;
+        }, 4000)
+    </script>
+</body>
+
+</html>

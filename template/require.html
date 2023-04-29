@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+
+    <title>BookArt</title>
+
+    <style>
+      body{
+        font-family: "Trirong", serif;
+      }
+.form{
+            width: 34%;
+            margin-left: 34%;
+            margin-top: 3%;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            margin-top: 3%;
+            margin-bottom: 1%;
+        }
+
+        input{
+            border-radius: 5px;
+            padding: 7px;
+            background-color: aliceblue;
+            color: red;
+        }
+
+        input:hover{
+            box-shadow: 2px 0px 0px 0px blue;
+        }
+        
+        input:active{
+            box-shadow: 2px 0px 0px 0px blue;
+            background-color: bisque;
+        }
+
+        .btn:hover{
+            box-shadow: 2px 0px 0px 0px yellow;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position:
+      sticky;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">BOOKART</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/shop">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/require">Requirments</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+<!-- NAVBAR -->
+<hr>
+
+<h5 style="color: rgb(50, 13, 13); text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-top: 2%; text-decoration: underline;">Input the form for any query or if you want to sell any book</h5>
+<div class="form">
+  <form action="/require" method="post">
+      {% csrf_token %}
+        <input type="text" placeholder="Name" required autofocus name="name">
+        <input type="number" placeholder="Your number please" required name="number" >
+        <input type="text" placeholder="Bookname" required name="bookname">
+        <input type="text" placeholder="Edition (if any) *optional" name="edition">
+        <input type="submit" value="Submit" class="btn btn-warning">
+    </form>
+</div>
+
+
+
+
+
+  
+<footer class="container-fluid bg-dark text-light p-5" style="margin-top: 6%; display: flex;">
+  <div class="left" style="margin: 1%;" >
+  <h2>BookArt</h2>
+  <div class="contact">
+    <p>Contact Us</p>
+    <a href="mailto:sinhapriyanshu81@gmail.com">bookart@gamil.com</a>
+  </div>
+  <p class="down">Copyright © 2023 BooKart.</p>
+</div>
+</footer>
+</body>
+</html>

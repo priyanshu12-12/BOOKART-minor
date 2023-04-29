@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BooKart</title>
+
+  <style>
+    body{
+      background-image: linear-gradient(rgb(255, 255, 255), rgb(206, 224, 255));
+      font-family: "Trirong", serif;
+
+    }
+    .body {
+      background-size: cover;
+      text-align: center;
+      padding-bottom: 25px;
+    }
+
+    .bodycontent {
+      padding-top: 7%;
+      padding-bottom: 8%;
+      backdrop-filter: blur(3px);
+    }
+
+    .btn {
+      margin-top: 7%;
+      background-color: aqua;
+      border: 1px solid rgb(12, 226, 226);
+      box-shadow: 1px 1px 2px 1px aqua;
+    }
+
+    .collection {
+      background-color: antiquewhite;
+      color: black;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+      justify-self: center;
+      gap: 5px;
+      padding-bottom: 23px;
+    }
+
+    .colm {
+      padding-top: 11px;
+      background-color: antiquewhite;
+    }
+
+    .mar {
+      width: 24%;
+      margin: 9px;
+    }
+
+    img {
+      aspect-ratio: 4/4;
+    }
+
+    .users{
+      padding-top: 3%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+      justify-self: center;
+      padding-bottom: 5%;      
+    }
+
+    .card{
+      margin: 1%;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position:
+      sticky;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">BOOKART</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/shop">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/require">Requirments</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- NAV END -->
+
+
+  <div class="body" style="color: aliceblue; background-image:url({% static 'img/p2.jpg' %})">
+    <div class="bodycontent">
+      <h1>BOOKART</h1>
+      <h3>Where dream for cheap and good quality 2nd hand books comes true.</h3>
+      <a href="/shop" class="shopBTN btn">Shop Now</a>
+    </div>
+  </div>
+  <!-- BODY END -->
+
+  <div class="colm container-fluid">
+    <h3>Our COLLECTIONS</h3>
+    <div class="collection">
+
+      <div>
+
+        <a href="https://byjus.com/jee/iit-jee-study-material/" class="link"><img src="{% static 'img/neet.png' %}"
+            class="iit mar">
+        </a>
+
+        <a href="https://byjus.com/jee/iit-jee-study-material/" class="link"><img
+            src="{% static 'img/IIT-JEE-LOGO.jpg' %}" class="iit mar">
+        </a>
+
+        <a href="https://byjus.com/jee/iit-jee-study-material/" class="link"><img src="{% static 'img/upsclogo.jpeg' %}"
+            class="iit mar">
+        </a>
+      </div>
+
+      <div class="more">
+        <a href="https://byjus.com/jee/iit-jee-study-material/" class="link"><img src="{% static 'img/CBSE-CLASS-11-LOGO.jpg' %}"
+            class="iit mar"></a>
+       
+            <a href="https://byjus.com/jee/iit-jee-study-material/" class="link"><img
+              src="{% static 'img/oswaal.jpg' %}" class="iit mar">
+       </a>
+              <a href="https://byjus.com/jee/iit-jee-study-material/" class="link"><img
+                src="{% static 'img/rd-sharma.webp' %}" class="iit mar"></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- COLLECTIONS END -->
+
+
+  <div class="heading container-fluid" style="margin-top: 1%;">
+  <h2>Our Customers</h2>
+</div>
+  <div class="users">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Priyanshu Sinha</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Backend Development</h6>
+        <p class="card-text">Worked upon the backend of the project using Django</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Pritam</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Frontend Development</h6>
+        <p class="card-text">Worked upon frontend of the project using HTML, CSS</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Krishna Dwevdi</h5>
+        <h6 class="card-subtitle mb-2 text-muted">AI enginner</h6>
+        <p class="card-text">Worked upon the chatbot of the project</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Vaisnavee kedia</h5>
+        <h6 class="card-subtitle mb-2 text-muted">AI enginner</h6>
+        <p class="card-text">Worked upon the chatbot of the project</p>
+      </div>
+    </div>
+
+  </div>
+<!-- USER DIV -->
+
+
+<footer class="container-fluid bg-dark text-light p-5" style="margin-top: 6%; display: flex;">
+  <div class="left" style="margin: 1%;" >
+  <h2>BookArt</h2>
+  <div class="contact">
+    <p>Contact Us</p>
+    <a href="mailto:sinhapriyanshu81@gmail.com">bookart@gamil.com</a>
+  </div>
+  <p class="down">Copyright © 2023 BooKart.</p>
+</div>
+</footer>
+</body>
+
+</html>

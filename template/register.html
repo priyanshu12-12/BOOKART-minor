@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Title</title>
+    <style>
+        h1 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        a {
+            color: white;
+            font-size: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="background-color: red; color: white;">{{error}}</h1>
+
+    <div class="card">
+        <h1>Register Here</h1>
+        <h1 style="color: white">{{ error }}</h1>
+        <form action="/register " method="post">
+            {% csrf_token %}
+            <input type="text" name="username" id="username" autofocus placeholder="Username" required>
+            <input type="email" name="email" id="email " placeholder="Email ">
+            <input type="password" name="password" id="password" placeholder="Password ">
+            <input type="submit" value="SUBMIT " class="btn ">
+        </form>
+        <p style="color: aliceblue;">Already registered? <a href="/" style="font-size: 25px; color: yellow;">Click
+                here</a></p>
+    </div>
+
+
+</body>
+
+</html>

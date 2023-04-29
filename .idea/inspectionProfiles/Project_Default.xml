@@ -1,0 +1,70 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="2">
+            <item index="0" class="java.lang.String" itemvalue="href" />
+            <item index="1" class="java.lang.String" itemvalue="source" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="8">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="input-border" />
+            <item index="7" class="java.lang.String" itemvalue="p" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="13">
+            <item index="0" class="java.lang.String" itemvalue="django-import-export" />
+            <item index="1" class="java.lang.String" itemvalue="docx2python" />
+            <item index="2" class="java.lang.String" itemvalue="docx2pdf" />
+            <item index="3" class="java.lang.String" itemvalue="docx" />
+            <item index="4" class="java.lang.String" itemvalue="spacy" />
+            <item index="5" class="java.lang.String" itemvalue="textract" />
+            <item index="6" class="java.lang.String" itemvalue="django-daterange-filterspec" />
+            <item index="7" class="java.lang.String" itemvalue="farm-haystack" />
+            <item index="8" class="java.lang.String" itemvalue="en-core-web-sm" />
+            <item index="9" class="java.lang.String" itemvalue="django-cors-headers" />
+            <item index="10" class="java.lang.String" itemvalue="en_core_web_trf" />
+            <item index="11" class="java.lang.String" itemvalue="fuzzywuzzy" />
+            <item index="12" class="java.lang.String" itemvalue="aspose-words" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="str.isnum" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
